@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+
+    form{
+        font-size: 1rem;
+            color: #0ff; /* Cor principal do texto */
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 40px #0ff,
+                0 0 80px #0ff;
+            font-family: Arial, sans-serif;
+    }
+    body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    }
+    body {
+    background-image: url('gulfnews_2025-08-17_e1dcvvpd_BTS12 (2).avif');
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    }
+    a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    a:hover{
+        color: #0056b3;
+        text-decoration: underline;
+    }
+    header{
+        background-color: #530598;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0,0,0.2);
+    }
+    header h1{
+        font-size: 4rem;
+            color: #0ff; /* Cor principal do texto */
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 40px #0ff,
+                0 0 80px #0ff;
+            font-family: Arial, sans-serif;
+        margin-top: 0;
+        font-size: 2.8em;
+        letter-spacing: 5px;
+    }
+
+    header p{
+        font-size: 1.1em;
+        opacity: 0.9;
+    }
+    nav {
+        background-color:  #007bff;
+        padding: 10px 0;
+        text-align:  center;
+        box-shadow: 0 2px 5px rgba(0, 0,0,0.2);
+    }
+
+    nav ul {
+        list-style:  none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li{
+        display: inline-block;
+        margin: 0 15px;
+    }
+    nav a{
+        color: white;
+        font-weight: bold;
+        padding: 5px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    nav a:hover::after{
+        left: 0;
+    }
+
+    main { 
+        max-width: 960px;
+        margin: 20px auto; 
+        padding: 20px; 
+        background-color: white; 
+        border-radius: 8px; 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); 
+    } 
+
+
+    main h2 { 
+        color: #6a03be ; 
+        text-align: center; 
+        margin-bottom: 25px; 
+
+    } 
+
+    
+    main p { 
+        margin-bottom: 15px; 
+        font-size: 1.05em; 
+
+    } 
+
+    
+    aside { 
+        background-color: #e9ecef; 
+        padding: 15px; 
+        margin: 25px 0; 
+        border-radius: 6px; 
+        border-left: 5px solid #28a745; 
+
+    } 
+
+
+    aside h3 { 
+        color: #28a745;  
+        margin-top: 0; 
+        border-bottom: 1px solid #ced4da; 
+        padding-bottom: 10px; 
+
+    } 
+
+    
+
+    aside ul { 
+        list-style: disc;  
+        margin-left: 20px; 
+        padding: 0; 
+
+    } 
+
+    
+
+    aside li { 
+        margin-bottom: 8px; 
+    } 
+
+    
+    aside a { 
+        color: #28a745; 
+    } 
+
+
+    aside a:hover { 
+        color: #1e7e34; 
+    } 
+
+
+    form button { 
+
+        display: block; 
+        margin: 30px auto;  
+        background-color: #6f42c1; 
+        color: white; 
+        padding: 12px 25px; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 1.1em; 
+        cursor: pointer; 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+        transition: all 0.3s ease-in-out; 
+
+    } 
+
+    
+
+    form button:hover { 
+
+        background-color: #5d34a8;
+        transform: translateY(-3px) scale(1.02); 
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+
+    } 
+
+
+    form .meu_botão { 
+        text-align: center;
+        display: block; 
+        margin: 30px auto;  
+        background-color: #6f42c1; 
+        color: white; 
+        padding: 12px 100px; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 1.1em; 
+        cursor: pointer; 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+        transition: all 0.3s ease-in-out; 
+
+    } 
+
+    
+
+    form .meu_botão:hover { 
+
+        background-color: #5d34a8;
+        transform: translateY(-3px) scale(1.02); 
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+
+    } 
+
+    footer{
+        background-color: #343a40;
+        color: #cccccc;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        font-size: 0.9em;
+        box-shadow: 0 -4px 8px rgba(0, 0,0,0.2);
+    }
+
+    footer p{
+        margin:  5px 0;
+    }
+
+    div{
+        background-color: #8008c5;
+        padding: 20px;
+        margin: 350px;
+        margin-top: 100px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="top">Formulário de Contato</h1>
+    </header>
+    <div>
+    
+    <form id="MyForm">
+        <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui"><br><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"><br><br>
+
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="****"><br><br>
+
+
+        <label for="idade">Sua Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="18" max="99"><br><br>
+
+
+        <p>Qual seu Idol favorito de Kpop ?</p>
+        <input type="radio" id="acao" name="genero_filme" value="acao">
+        <label for="acao">Cha Eunwoo (ASTRO)</label><br>
+        <input type="radio" id="comedia" name="genero_filme" value="comedia">
+        <label for="comedia">Kim Taehyung (V) (BTS)</label><br>
+        <input type="radio" id="drama" name="genero_filme" value="drama">
+        <label for="drama">Hyunjin (Stray Kids)</label><br><br>
+
+
+        <p>Quais Tipo de grupo do Kpop você mais gosta ? </p>
+        <input type="checkbox" id="python" name="linguagem" value="python">
+        <label for="python">BTS</label><br>
+        <input type="checkbox" id="java" name="linguagem" value="java">
+        <label for="java">BLACKPINK</label><br>
+        <input type="checkbox" id="html_css" name="linguagem" value="html_css">
+        <label for="html_css">Stray Kids</label><br><br>
+
+
+        <label for="mensagem">Sua Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+        <p id="error" style= "display: none;">
+            ⚠️ Preencha todos os campos!
+        </p>
+
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Campos</button>
+        
+    </form>
+
+    <footer>
+        <p>Obrigado por seu contato!</p>
+    </footer>
+    </div>
+    <script>
+    const form = document.getElementById('myForm');
+    const username = document.getElementById('nome');
+    const password = document.getElementById('senha');
+    const errorMsg = document.getElementById('error');
+    const email = document.getElementById('email');
+    const idade = document.getElementById('idade');
+
+    form.addEventListener('submit', (e) => {
+        // Verifica se algum campo está vazio
+         if (username.value.trim() === '' || password.value.trim() === '' || email.value.trim() === '' || idade.value.trim() === '') {
+            e.preventDefault(); // Impede o envio do formulário
+            errorMsg.style.display = 'block'; // Mostra mensagem de erro
+        } else {
+            errorMsg.style.display = 'none'; // Oculta a mensagem se estiver ok
+        }
+    });
+</script>
