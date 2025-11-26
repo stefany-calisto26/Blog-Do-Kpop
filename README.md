@@ -50,7 +50,7 @@ project/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/kpop-blog.git
+git clone http://127.0.0.1:5500/Blog%20Do%20Kpop.html#
 
 # Acesse a pasta
 cd kpop-blog
@@ -70,7 +70,7 @@ main → /root
 Salve e aguarde alguns minutos
 
 Seu blog estará disponível em:
-https://seu-usuario.github.io/kpop-blog/
+http://127.0.0.1:5500/Blog%20Do%20Kpop.html#
 
 💖 Contribuições
 
